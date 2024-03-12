@@ -1,0 +1,22 @@
+.box {
+
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 10px solid rgb(173, 173, 173);
+    padding: 10px;
+    outline-offset: 10px;
+    outline: 10px dotted grey;
+    margin: 20px;
+    line-height: 200px;
+    text-align: center;
+
+}
+
+#BOX1 {
+    background-color: rgb(202, 19, 202);
+}
+
+#BOX2 {
+    background-color: rgb(31, 31, 230);
+}
