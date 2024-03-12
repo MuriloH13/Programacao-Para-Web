@@ -1,0 +1,105 @@
+<h2>A. O que é Internet e WEB? São as mesmas coisas? Explique de forma clara e evidencie as diferenças</h2>
+
+R: A Internet é uma infraestrutura global de redes interconectadas que permite a comunicação e a transferência de dados entre dispositivos enquanto a (WEB)é um serviço específico da Internet que utiliza a transferência de documentos em formato hipermídia por meio do protocolo HTTP. Assim, a Internet é a infraestrutura de redes, enquanto a WEB é um serviço específico que opera sobre essa infraestrutura.
+
+<h2>B. O que é arquitetura cliente-servidor utilizada na web ? Explique o carregamento de uma página passo a passo</h2>
+
+R: A arquitetura cliente-servidor na web refere-se à distribuição de funções entre um cliente e um servidor. O cliente solicita recursos, e o servidor fornece esses recursos. O carregamento de uma página web se baseia nos seguintes passos:
+
+O navegador (cliente) envia uma solicitação HTTP para o servidor, depois o servidor processa a solicitação e envia de volta os arquivos necessários, como HTML, CSS e JavaScript e então o navegador interpreta o HTML para construir a estrutura da página assim solicitando recursos adicionais, como imagens, scripts e folhas de estilo e depois renderizando a página, exibindo-a para o usuário.
+
+<h2>C. O que é um tag HTML?</h2>
+
+R: Uma tag HTML é um elemento usado para marcar partes específicas de um documento HTML e informar ao navegador como essas partes devem ser exibidas. As tags são geralmente compostas por um nome entre colchetes angulares, como <tag></tag>
+
+<h2>D.  O que é HTML e qual a estrutura básica de um documento HTML?</h2>
+
+R: HTML (Hypertext Markup Language) é uma linguagem de marcação usada para estruturar o conteúdo em páginas web e sua estrutura basica é:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Título da Página</title>
+</head>
+<body>
+    <!-- Conteúdo da Página -->
+</body>
+</html>
+
+<h2>E. Discuta com colega o que são tags semânticas do HTML.</h2>
+
+R: Tags semânticas no HTML são elementos que fornecem significado estrutural ao conteúdo da página. Em vez de simplesmente definir a aparência visual, as tags semânticas descrevem o significado do conteúdo. Exemplos incluem <header>, <nav>, <article>, <section>, <footer>, entre outras. Elas tornam o código mais legível para desenvolvedores e ajudam os motores de busca a entender melhor a estrutura da página.
+
+<h2>F. Explique como é criado um link no HTML sobre um parágrafo.</h2>
+
+R: Para criar um link em HTML sobre um parágrafo, você pode usar a tag <a> (âncora). Exemplo: <p>Paráfrafo <a href="https://www.exemplo.com">link</a>.</p>
+
+<h2>G. Implemente as seguintes listas em HTML</h2>
+
+<ol type="a">
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+
+<ol type="I">
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<h2>H. Crie uma página biográfica que inclui um cabeçalho com seu nome, uma breve descrição em um parágrafo, e uma lista de hobbies ou interesses.
+</h2>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia - [Seu Nome]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        p {
+            line-height: 1.5;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Murilo Henrique Silveira Branco </h1>
+    </header>
+
+    <section>
+        <h2>Sobre Mim</h2>
+        <p>Sou Murilo Henrique Silveira Branco, uma pessoa apaixonada por tecnologia e linguagens de programação e estive sempre em contato com a tecnologia desde criança pois um dos meu familiares com quem sou próximo sempre me incentivou e demonstrou como a tecnologia é uma área impressionantemente vasta e com extremo potencial de versatilidade, desta forma busco aprender e explorar novas tecnologias que me pareçam interessantes futuramente.</p>
+    </section>
+
+    <section>
+        <h2>Hobbies e Interesses</h2>
+        <ul>
+            <li>Programação e Desenvolvimento de Software</li>
+            <li>Jogar Videogames</li>
+            <li>Sair com os amigos</li>
+            <li>Explorar Novas Tecnologias</li>
+            <li>Praticar Exercícios</li>
+        </ul>
+    </section>
+</body>
+</html>
