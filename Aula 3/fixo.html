@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Fixo</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0px;
+                padding: 0px;
+            }
+            
+
+            .box{
+                position: fixed;
+                width: 100px;
+                height: 100px;
+                border: 1px solid rgb(138, 83, 52);
+            }
+            #box1{
+                background-color: grey;
+            }
+            #box2{
+                top: 0px;
+                right: 0px;
+                background-color: rgb(79, 79, 241);
+            }
+            #box3{
+                bottom: 0px;
+                right: 0px;
+                background-color: yellow;
+            }
+            #box4{
+                bottom: 0px;
+                background-color: aqua;
+            }
+            #box5{
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" id="box1"> box 1
+        </div>
+        <div class="box" id="box2"> box 2</div>
+        <div class="box" id="box3"> box 3</div>
+        <div class="box" id="box4"> box 4</div>
+        <div class="box" id="box5"> box 5</div>
+    </body>
+</html>
