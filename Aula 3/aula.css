@@ -1,0 +1,46 @@
+.box {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+
+
+}
+
+#box2 {
+    position: relative;
+    /*se distancia em relação a sua posição estática. */
+    top: 100px;
+    left: 100px;
+}
+
+#contentbox {
+    position: relative;
+    /* Define a altura em fluxo(se reajusta automaticamente
+    /* conforme necessário gerando novos espaços para o conteúdo 
+    */
+    border: 4px dotted red;
+    top: 100px;
+    left: 100px;
+
+}
+
+#box3 {
+    position: absolute;
+    /* Não ocupa o lugar de sua posição inicial e se posiciona
+    /* do local inicial de onde esta alocado nesse caso na contentbox 
+    */
+    top: 100px;
+    left: 10px;
+}
+
+#box11 {
+    width: 45px;
+    height: 45px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+
+}
