@@ -1,0 +1,68 @@
+.box{
+    width: 100px;
+    height : 100px;
+    border : 1px double magenta;
+    font-size: 20pt;
+    text-align: center;
+    position: relative;
+    animation: moveright 5s linear 0s infinite ;
+            /* nome duração */
+}
+
+.box:hover{
+  animation: gira 0.1s linear 0s infinite ;
+}
+
+#c1box1{
+    animation:moveright 0.1s linear 0s infinite ;
+}
+@keyframes moveright {
+    0%{
+        left:0px;
+    } 
+    50%{
+        left:300px;
+    }
+    100%{
+        left:800px;
+        background-color: blue;
+    }
+}
+
+#rocket{
+    width: 200px;
+    transform: rotate(315deg);
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    animation: lancamento 5s ease-in 0s infinite ;
+}
+
+ @keyframes lancamento {
+    
+    0%{
+        top: 100%;
+    }
+
+    100%{
+      top: 0%;
+    }
+ }
+
+
+
+
+
+/*@keyframes gira {
+    0%{
+        transform: rotate();
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+*/
+
+
+
+
