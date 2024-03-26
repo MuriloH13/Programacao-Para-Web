@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* Space: distribui a partir da proxima definição
+    a maneira que o espaço será distribuido entre os elementos*/
+    /*align-items: center;*/
+    /* Alinha os itens a partir da altura do conteúdo */
+    border: 1px solid black;
+    /* Apenas para a visualização do conteúdo*/
+    align-content: stretch;
+    /* Justifica o espaço das linhas do contéudo, no caso
+    /* do stretch é necessário retirar o align items pois
+    /* ele gerenciará o tamanho das linhas*/
+
+
+    /*flex-wrap: nowrap;
+    /* muda a propriedade de quebra de linha
+    /* do conteúdo, nesse caso não deixando quebrar a linha
+    */
+
+    /*flex-wrap: wrap-reverse;
+    /* quebra os conteudos de quebra de forma inversa
+    */
+}
+
+.box {
+    border: 1px solid black;
+    flex-shrink: 0;
+    min-width: 30px;
+    transition: 2s;
+}
+
+.box:hover {
+    flex-grow: 1;
+    transition: 2s;
+    background-color: purple;
+}
+
+#c1-box2 {
+    align-self: flex-start;
+}
