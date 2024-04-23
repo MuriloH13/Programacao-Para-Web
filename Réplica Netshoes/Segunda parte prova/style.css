@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#ilustracao{
+    width: max-content;
+    padding: 0px;
+}
+
+#desconto{
+    width: max-content;
+    padding: 0px;
+}
+
+#procura{
+    width: 600px;
+    font-size: small;
+    color: white;
+    font-weight: 100;
+    height: 40px;
+    border-radius: 20%;
+}
+
+#final{
+    width: max-content;
+}
+
+#zatini {
+    background-color: #351159;
+    color: white;
+    padding: 2px;
+    font-size: 9px;
+    text-align: start;
+    margin: 0px;
+}
+
+#coracao{
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+}
+
+#netshoes{
+    background-color: #5F328C;
+    text-align: center;
+    margin: 0 20px;
+    height: 70px;
+}
+
+nav {
+    background-color: #e9ecef;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+main {
+    text-align: center;
+}
+
+
+main img {
+    width: 50%;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
