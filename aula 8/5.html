@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>O resultado é:</h1>
+    <p id="presultado">-</p>
+    
+</body>
+<script>
+    // Faz a variavel receber o valor em Number
+    let a=Number(prompt("Informe o valor de a"));
+    let b=Number(prompt("Informe o valor de b"));
+    //faz a variavel paragrafo receber o id do paragrafo <p> da página
+    let paragrafo=document.getElementById("presultado");
+    //executa a soma dos dois numéros pois estão em int/double, se não concatenaria os dois juntos
+    paragrafo.innerHTML=a+b;
+    //muda a cor do background do parágrafo para a declarada entre aspas
+    paragrafo.style.backgroundColor="#AA0000";
+
+</script>
+</html>
