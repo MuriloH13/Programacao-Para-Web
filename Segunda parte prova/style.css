@@ -16,6 +16,10 @@ h3 {
   font-weight: 500;
 }
 
+numeros{
+  color: rgb(199, 1, 199);
+}
+
 .conjunto {
   display: flex;
   flex-direction: row;
@@ -34,12 +38,12 @@ h3 {
 }
 
 #ilustracao {
-  width: max-content;
+  width: fit-content;
   padding: 0px;
 }
 
 #desconto {
-  width: max-content;
+  width: fit-content;
   padding: 0px;
 }
 
@@ -57,7 +61,7 @@ h3 {
     flex-wrap: nowrap;
     flex-direction: row;
     border: 1px solid black;
-    color: black;
+    color: white;
     height: 60px;
     width: 320px;
     align-content: center;
@@ -153,7 +157,7 @@ h3 {
 }
 
 nav {
-  background-color: #e9ecef;
+  background-color: white;
   text-align: center;
   padding: 10px;
 }
