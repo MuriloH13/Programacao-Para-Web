@@ -1,17 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
         body{
-            background-color: aqua;
+            height: 100vh;
+            background-color: rgb(95, 191, 230);
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
         }
-    </style>
-</head>
-<body>
-    
+        
+        .calculadora{
+            width: 80vh;
+            height: 80vh;
+            background-color: rgb(180, 178, 178);
+            border-radius: 20px;
+        }
 
-</body>
+        #display{
+            display: flex;
+            border-radius: 20px 20px 0px 0px;
+            background-color: rgb(14, 13, 13);
+            width: 100%;
+            height: 25%;
+            font-size: 30pt;
+            justify-content: flex-end;
+            align-items: center;
+            color: white;
+        }
+
+        .button{
+            text-align: center;
+            height: 100%;
+            background-color: aliceblue;
+            border: 1px solid black;
+        }
+
+        .button:active{
+            background-color: gray;
+        }
+
+        #teclado{
+            display: grid;
+            height: 75%;
+            font-size: 30pt;
+            grid-template-areas:
+            "buttonMais buttonMenos buttonMult buttonDiv "
+            "btn7 btn8 btn9 equal"
+            "btn4 btn5 btn6 equal"
+            "btn1 btn2 btn3 equal"
+            "btn0 btnDot btnClear equal"
+            ;
+        }
+
+        #btnEqual{
+            background-color: rgb(214, 98, 3);
+            
+        }
+
+        #btnMais{grid-area: buttonMais;}
+        #btnMenos{grid-area: buttonMenos;}
+        #btnMult{grid-area: buttonMult;}
+        #btnDiv{grid-area: buttonDiv;}
+
+        #btn0{grid-area: btn0;}
+        #btn1{grid-area: btn1;}
+        #btn2{grid-area: btn2;}
+        #btn3{grid-area: btn3;}
+        #btn4{grid-area: btn4;}
+        #btn5{grid-area: btn5;}
+        #btn6{grid-area: btn6;}
+        #btn7{grid-area: btn7;}
+        #btn8{grid-area: btn8;}
+        #btn9{grid-area: btn9;}
+        #btnEqual{grid-area: equal;}
+        #btnDot{grid-area: btnDot;}
+        #btnClear{grid-area: btnClear;}
+
+    </style>
+    </head>
+    <body>
+
+        <div class="calculadora">
+            <div id="display"></div>
+            <div id="teclado">
+                <div class="button buttonOp" id="btnMais">+</div>
+                <div class="button buttonOp" id="btnMenos">-</div>
+                <div class="button buttonOp" id="btnMenos">-</div>
+                <div class="button buttonOp" id="btnMult">*</div>
+                <div class="button buttonOp" id="buttonDiv">/</div>
+                <div class="button buttonChar buttonNumber" id="btn1">1</div>
+                <div class="button buttonChar buttonNumber" id="btn2">2</div>
+                <div class="button buttonChar buttonNumber" id="btn3">3</div>
+                <div class="button buttonChar buttonNumber" id="btn4">4</div>
+                <div class="button buttonChar buttonNumber" id="btn5">5</div>
+                <div class="button buttonChar buttonNumber" id="btn6">6</div>
+                <div class="button buttonChar buttonNumber" id="btn7">7</div>
+                <div class="button buttonChar buttonNumber" id="btn8">8</div>
+                <div class="button buttonChar buttonNumber" id="btn9">9</div>
+                <div class="button buttonChar buttonNumber" id="btn0">0</div>
+                <div class="button buttonChar" id="btnDot">.</div>
+                <div class="button buttonChar" id="btnClear">AC</div>
+                <div class="button buttonChar" id="btnEqual">=</div>
+            </div>
+        </div>
+
+        <script>
+            let display = document.querySelector("#display")
+            let equacao="0"
+            display.textContent=equacao
+            let btnEqual=document.querySelector("#btnEqual")
+            btnEqual.addEventListener('click', ()=>{
+                display.textContent=eval(equacao)
+            })
+        </script>
+
+    </body>
 </html>
