@@ -17,7 +17,8 @@
         .calculadora{
             width: 80vh;
             height: 80vh;
-            background-color: rgb(180, 178, 178);
+            background-color: white;
+            padding: 10px;
             border-radius: 20px;
         }
 
@@ -38,6 +39,7 @@
             height: 100%;
             background-color: aliceblue;
             border: 1px solid black;
+            border-radius: 10%;
         }
 
         .button:active{
@@ -59,7 +61,7 @@
 
         #btnEqual{
             background-color: rgb(214, 98, 3);
-            
+            border-radius: 5%;
         }
 
         #btnMais{grid-area: buttonMais;}
@@ -88,35 +90,44 @@
         <div class="calculadora">
             <div id="display"></div>
             <div id="teclado">
-                <div class="button buttonOp" id="btnMais">+</div>
-                <div class="button buttonOp" id="btnMenos">-</div>
-                <div class="button buttonOp" id="btnMenos">-</div>
-                <div class="button buttonOp" id="btnMult">*</div>
-                <div class="button buttonOp" id="buttonDiv">/</div>
-                <div class="button buttonChar buttonNumber" id="btn1">1</div>
-                <div class="button buttonChar buttonNumber" id="btn2">2</div>
-                <div class="button buttonChar buttonNumber" id="btn3">3</div>
-                <div class="button buttonChar buttonNumber" id="btn4">4</div>
-                <div class="button buttonChar buttonNumber" id="btn5">5</div>
-                <div class="button buttonChar buttonNumber" id="btn6">6</div>
-                <div class="button buttonChar buttonNumber" id="btn7">7</div>
-                <div class="button buttonChar buttonNumber" id="btn8">8</div>
-                <div class="button buttonChar buttonNumber" id="btn9">9</div>
-                <div class="button buttonChar buttonNumber" id="btn0">0</div>
-                <div class="button buttonChar" id="btnDot">.</div>
-                <div class="button buttonChar" id="btnClear">AC</div>
-                <div class="button buttonChar" id="btnEqual">=</div>
+                <div class="button buttonOp" id="btnMais" onclick="addNums('+')">+</div>
+                <div class="button buttonOp" id="btnMenos" onclick="addNums('-')">-</div>
+                <div class="button buttonOp" id="btnMult" onclick="addNums('*')">*</div>
+                <div class="button buttonOp" id="buttonDiv" onclick="addNums('/')">/</div>
+                <div class="button buttonChar buttonNumber" id="btn1" onclick="addNums('1')">1</div>
+                <div class="button buttonChar buttonNumber" id="btn2" onclick="addNums('2')">2</div>
+                <div class="button buttonChar buttonNumber" id="btn3" onclick="addNums('3')">3</div>
+                <div class="button buttonChar buttonNumber" id="btn4" onclick="addNums('4')">4</div>
+                <div class="button buttonChar buttonNumber" id="btn5" onclick="addNums('5')">5</div>
+                <div class="button buttonChar buttonNumber" id="btn6" onclick="addNums('6')">6</div>
+                <div class="button buttonChar buttonNumber" id="btn7" onclick="addNums('7')">7</div>
+                <div class="button buttonChar buttonNumber" id="btn8" onclick="addNums('8')">8</div>
+                <div class="button buttonChar buttonNumber" id="btn9" onclick="addNums('9')">9</div>
+                <div class="button buttonChar buttonNumber" id="btn0" onclick="addNums('0')">0</div>
+                <div class="button buttonChar" id="btnDot" onclick="addNums('.')">.</div>
+                <div class="button buttonChar" id="btnClear" onclick="apagar()">AC</div>
+                <div class="button buttonChar" id="btnEqual" onclick="calc()">=</div>
             </div>
         </div>
 
         <script>
-            let display = document.querySelector("#display")
-            let equacao="0"
-            display.textContent=equacao
-            let btnEqual=document.querySelector("#btnEqual")
-            btnEqual.addEventListener('click', ()=>{
-                display.textContent=eval(equacao)
-            })
+            
+            let display = document.getElementById("display")
+            display.textContent = "0"
+            
+            function addNums(n){
+                display.textContent += n
+            }
+
+            function apagar(){
+                display.textContent = '0'
+            }
+
+            function calc(){
+                display.textContent = eval(display.textContent)
+            }
+
+
         </script>
 
     </body>
