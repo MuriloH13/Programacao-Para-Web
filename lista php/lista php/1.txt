@@ -1,0 +1,1 @@
+um exemplo seria a tag <? php e ?> aonde o php começa o código ou o para conforme o posicionamento da tag de fechamento de php
